@@ -49,12 +49,12 @@ function ListStats() {
         type="number"
         value={values.num5}
         onChange={(e) =>
-          setValues((prev) => ({ ...prev, num4: e.target.value }))
+          setValues((prev) => ({ ...prev, num5: e.target.value }))
         }
       />
 
-      <p>Sum: {sum}</p>
-      <p>Average: {sum / 4}</p>
+      <p data-testid="sum-value">Sum: {sum}</p>
+      <p data-testid="avg-value">Average: {sum / 5}</p>
     </div>
   );
 }

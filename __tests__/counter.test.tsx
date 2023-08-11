@@ -64,7 +64,7 @@ describe('Counter', () => {
     expect(counterValue.textContent).toBe(String(expectedValue));
   });
 
-  it('should show a message value of "Less than or equal to 3" when incremented 4 times', () => {
+  it('should show a message value of "Greater than 3, but less than or equal to 8" when incremented 4 times from counter 0', () => {
     const currentValue = messageValue.textContent;
     const expectedValue = 'Greater than 3, but less than or equal to 8';
 
@@ -75,7 +75,7 @@ describe('Counter', () => {
     expect(messageValue.textContent).toBe(expectedValue);
   });
 
-  it('should show a message value of "Greater than 8" when incremented 9 times', () => {
+  it('should show a message value of "Greater than 8" when incremented 9 times from counter 0', () => {
     const currentValue = messageValue.textContent;
     const expectedValue = 'Greater than 8';
 
